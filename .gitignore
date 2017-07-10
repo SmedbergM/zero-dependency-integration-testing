@@ -1,0 +1,5 @@
+*.deb
+docker/deb
+.idea/
+target/
+build.properties
