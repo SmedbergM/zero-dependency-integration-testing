@@ -6,7 +6,7 @@ import scala.util.matching.Regex
 import com.fasterxml.jackson.databind.JsonMappingException
 import com.github.smedbergm.biblioClient.data.{User, Book}
 
-object BiblioServiceMock extends BiblioServiceInterface {
+object BiblioServiceFake extends BiblioServiceInterface {
   def regexify(query: String): Seq[Regex] = {
     query.split("""\s+""").toSeq.map(token => s"(?i:$token)".r)
   }
