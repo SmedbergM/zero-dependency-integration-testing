@@ -5,7 +5,7 @@ import com.github.smedbergm.biblioClient.data.User
 import org.scalatest.FlatSpec
 
 class BiblioClientSpec extends FlatSpec {
-  val client = new BiblioClient(BiblioServiceMock)
+  val client = new BiblioClient(BiblioServiceFake)
 
   "getUser" should "get a user" in {
     assert(client.getUser("edijkstra") contains User(1, "edijkstra@texas.edu","Edsger","Dijkstra"))
