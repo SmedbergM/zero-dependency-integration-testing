@@ -16,7 +16,6 @@ object BiblioService {
       BookHandler.handle(request, optTitle, optAuthor, optIsbn)
     case request @ GET -> Root / "api" / "user" :? Search(query) => UserHandler.handle(request, query)
     case request @ GET -> Root / "api" / "user" / "items" :? UserID(userID) => UserItemsHandler.handle(request, userID)
-//    case request @ POST -> Root / "user" / "items" => UserItemsHandler.handle(request)
   }
 
   private val usage =
