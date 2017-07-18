@@ -6,7 +6,7 @@ The code in this repository shows a stepwise evolution of a small codebase which
 
   The code in the `service-1.x` subprojects is not a model of software engineering; rather, it is intended to represent an external service over which you, the developer, have no direct control and whose behavior can at times be less than ideal.
 
-  The `biblio-client` subproject is the application code that you, the developer, is responsible for.
+  The `biblio-client` subproject is the application code that you, the developer, are responsible for.
   
   The four branches of the project are covered in the talk in the following order:
 
