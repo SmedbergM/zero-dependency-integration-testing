@@ -7,7 +7,7 @@ import com.github.smedbergm.biblioClient.data.{User, Book}
 import org.scalatest.FlatSpec
 
 class BiblioService10ConnectorSpec extends FlatSpec {
-  "getUsers" should "try to return a list of Users" in {
+  ignore should "try to return a list of Users" in {
     BiblioService10Connector.getUsers("edijkstra") match {
       case Success(users) => assert(users contains User(1, "edijkstra@texas.edu","Edsger","Dijkstra"))
     }
@@ -45,7 +45,7 @@ class BiblioService10ConnectorSpec extends FlatSpec {
     }
   }
 
-  "" should "" in {
+  ignore should "get a user's checked out items" in {
     BiblioService10Connector.getCheckedOutItems(1) match {
       case Success(books) => assert(books.toSet[Book].map(_.title) === Set(
         "Programming in Scala",
